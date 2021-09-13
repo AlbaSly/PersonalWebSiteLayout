@@ -5,10 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raxel Arias</title>
+
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preload" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <header>
-        <h1>Raxel Arias <span>Student</span></h1>
+        <h1 class="title">Raxel Arias <span>Student</span></h1>
     </header>
+    
+    <div class="main-nav-bg">
+        <nav class="main-nav main-nav-container">
+            <a href="">Home</a>
+            <a href="">Portfolio</a>
+            <a href="">Clients</a>
+            <a href="">Contact</a>
+        </nav>
+    </div>
+
+    <section>
+        <h2 class="title">Software Engineering Student</h1>
+        <p>Villahermosa, Tab., México</p>
+        <a href="">Contact Me</a>
+    </section>
+
+
+    <main>
+        <h2 class="h2-title">Skills</h2>
+    
+        <section>
+            <h3>Codding</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0091FF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <polyline points="7 8 3 12 7 16" />
+                <polyline points="17 8 21 12 17 16" />
+                <line x1="14" y1="4" x2="10" y2="20" />
+            </svg>
+            <p>
+                Sed diam dui, auctor vitae leo ut, scelerisque porttitor metus. Etiam nunc ipsum, vulputate et hendrerit et, malesuada eget ligula.
+            </p>
+        </section>
+        
+        <section>
+            <h3>Databases</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-database" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F7BD64" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <ellipse cx="12" cy="6" rx="8" ry="3"></ellipse>
+                <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+                <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+            </svg>
+            <p>
+                Sed diam dui, auctor vitae leo ut, scelerisque porttitor metus. Etiam nunc ipsum, vulputate et hendrerit et, malesuada eget ligula.                
+            </p>
+        </section>
+
+        <section>
+            <h3>Learner</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EA5E93" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                <line x1="3" y1="6" x2="3" y2="19" />
+                <line x1="12" y1="6" x2="12" y2="19" />
+                <line x1="21" y1="6" x2="21" y2="19" />
+            </svg>
+            <p>
+                Sed diam dui, auctor vitae leo ut, scelerisque porttitor metus. Etiam nunc ipsum, vulputate et hendrerit et, malesuada eget ligula.
+            </p>
+        </section>
+    </main>
+
+    <section>
+        <h2 class="h2-title">Contact</h2>
+
+        <form action="">
+            <fieldset>
+                <legend>Fill your information</legend>
+            
+                <label for="">Name</label>
+                <input type="text" placeholder="Your name">
+
+                <label for="">Email</label>
+                <input type="email" placeholder="Your@Email.com">
+            
+                <label for="">Message</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Tell me :)"></textarea>
+            
+                <input type="button" value="Submit">
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p class="title">Raxel Arias, 2021</p>
+    </footer>
 </body>
 </html>
