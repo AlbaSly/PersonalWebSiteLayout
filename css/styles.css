@@ -1,0 +1,71 @@
+:root {
+    --montse: 'Montserrat', sans-serif;
+
+    --mexicanrose: #FD0061;
+    --brillianrose: #FF6699;
+    --raspberryglaze: #FF77AA;
+    --quicksilver: #A1A1A1;
+    --mediumdarkgray: #4D4D4D;
+    --darkgray: #282828;
+    --chinesesilver: #CCCCCC;
+    --darkpastelgreen: #12CA98;
+
+    --pastel-blue: #0091FF;
+    --pastel-yellow: #F7BD64;
+    --pastel-pink: #EA5E93; 
+    --grisacean: #9496A3;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: var(--montse);
+    background-color: var(--darkgray);
+    color: var(--chinesesilver);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1.title {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.title span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+section h2.title {
+    font-size: 4rem;
+}
+
+.main-nav-bg {
+    background-color: var(--raspberryglaze);
+}
+
+.main-nav-container {
+   max-width: 120rem;
+   margin: 0 auto;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-nav > a {
+    padding: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.main-nav a:hover {
+    background-color: var(--brillianrose);
+}
