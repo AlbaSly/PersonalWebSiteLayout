@@ -18,16 +18,17 @@
 
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Box Model */
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
+    box-sizing: inherit; /* Box Model */
 }
 
 body {
     font-size: 16px;
     font-family: var(--montse);
+    /**background-image: linear-gradient(to bottom, var(--darkgray) 0%, var(--mediumdarkgray) 100%); **/
     background-color: var(--darkgray);
     color: var(--chinesesilver);
 }
@@ -82,6 +83,7 @@ section h2.title {
     background-size: cover;
     height: 35rem;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .section-h2 {
@@ -120,6 +122,41 @@ section h2.title {
 
 .btn:hover {
     background-color: var(--raspberryglaze);
+}
+
+.shadow {
+    /* -webkit-box-shadow: -4px 9px 7px 1px rgba(0,0,0,0.75); /* Chrome prefix*/
+    /* -moz-box-shadow: -4px 9px 7px 1px rgba(0,0,0,0.75); /* IEE  prefix*/
+    box-shadow: -4px 9px 7px 1px rgba(0,0,0,0.75); /* Standar 95% */
+
+    background-color: var(--mediumdarkgray);
+    border-radius: .5rem;
+    padding: 2rem;
+    max-width: 80%;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+}
+
+.skill-section {
+
+}
+
+.coding {
+    padding-left: 50%;
+}
+
+.databases {
+    grid-area: 1 / 3;
+    padding-right: 50%;
+}
+
+.learner {
+    grid-area: 2 / 2;
 }
 
 .footer-text {

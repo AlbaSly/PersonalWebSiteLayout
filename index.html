@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
 
-
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -51,49 +50,51 @@
     </section>
 
 
-    <main>
+    <main class="main-nav-container shadow">
         <h2 class="h2-title">Skills</h2>
     
-        <section>
-            <h3>Codding</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0091FF" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <polyline points="7 8 3 12 7 16" />
-                <polyline points="17 8 21 12 17 16" />
-                <line x1="14" y1="4" x2="10" y2="20" />
-            </svg>
-            <p>
-                Sed diam dui, auctor vitae leo ut, scelerisque porttitor metus. Etiam nunc ipsum, vulputate et hendrerit et, malesuada eget ligula.
-            </p>
-        </section>
-        
-        <section>
-            <h3>Databases</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-database" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F7BD64" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <ellipse cx="12" cy="6" rx="8" ry="3"></ellipse>
-                <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
-                <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
-            </svg>
-            <p>
-                Sed diam dui, auctor vitae leo ut, scelerisque porttitor metus. Etiam nunc ipsum, vulputate et hendrerit et, malesuada eget ligula.                
-            </p>
-        </section>
-
-        <section>
-            <h3>Learner</h3>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EA5E93" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
-                <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
-                <line x1="3" y1="6" x2="3" y2="19" />
-                <line x1="12" y1="6" x2="12" y2="19" />
-                <line x1="21" y1="6" x2="21" y2="19" />
-            </svg>
-            <p>
-                Sed diam dui, auctor vitae leo ut, scelerisque porttitor metus. Etiam nunc ipsum, vulputate et hendrerit et, malesuada eget ligula.
-            </p>
-        </section>
+        <div class="skills">
+            <section class="coding skill-section">
+                <h3>Coding</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#0091FF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <polyline points="7 8 3 12 7 16" />
+                    <polyline points="17 8 21 12 17 16" />
+                    <line x1="14" y1="4" x2="10" y2="20" />
+                </svg>
+                <p>
+                    Sed diam dui, auctor vitae leo ut, scelerisque porttitor metus. Etiam nunc ipsum, vulputate et hendrerit et, malesuada eget ligula.
+                </p>
+            </section>
+            
+            <section class="databases skill-section">
+                <h3>Databases</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-database" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F7BD64" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <ellipse cx="12" cy="6" rx="8" ry="3"></ellipse>
+                    <path d="M4 6v6a8 3 0 0 0 16 0v-6" />
+                    <path d="M4 12v6a8 3 0 0 0 16 0v-6" />
+                </svg>
+                <p>
+                    Sed diam dui, auctor vitae leo ut, scelerisque porttitor metus. Etiam nunc ipsum, vulputate et hendrerit et, malesuada eget ligula.                
+                </p>
+            </section>
+    
+            <section class="learner skill-section">
+                <h3>Learner</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#EA5E93" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                    <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+                    <line x1="3" y1="6" x2="3" y2="19" />
+                    <line x1="12" y1="6" x2="12" y2="19" />
+                    <line x1="21" y1="6" x2="21" y2="19" />
+                </svg>
+                <p>
+                    Sed diam dui, auctor vitae leo ut, scelerisque porttitor metus. Etiam nunc ipsum, vulputate et hendrerit et, malesuada eget ligula.
+                </p>
+            </section>
+        </div>
     </main>
 
     <section>
