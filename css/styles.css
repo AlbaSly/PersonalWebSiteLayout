@@ -18,6 +18,11 @@
 
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -43,6 +48,7 @@ h1.title {
 
 section h2.title {
     font-size: 4rem;
+    margin: 0 auto;
 }
 
 .main-nav-bg {
@@ -68,4 +74,55 @@ section h2.title {
 
 .main-nav a:hover {
     background-color: var(--brillianrose);
+}
+
+.section-title {
+    background-image: url(../img/py8T3X.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 35rem;
+    position: relative;
+}
+
+.section-h2 {
+    font-size: 4rem;
+}
+
+.section-title-container {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* horizontal */
+    justify-content: center; /* vertical */
+}
+
+.my-location {
+    display: flex;
+    align-items: flex-start;
+}
+
+.btn {
+    color: var(--chinesesilver);
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--brillianrose);
+    border-radius: 1.5rem;
+    padding: 1rem 1.5rem;
+    margin-top: 4rem;
+    width: 80%;
+}
+
+.btn:hover {
+    background-color: var(--raspberryglaze);
+}
+
+.footer-text {
+    text-align: center;
+    font-style: italic;
 }
