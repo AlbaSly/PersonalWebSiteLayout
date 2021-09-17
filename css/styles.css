@@ -18,17 +18,17 @@
 
 html {
     font-size: 62.5%;
-    box-sizing: border-box; /* Box Model */
+    box-sizing: border-box; /** Sin que el contenido se vea afectado por el modelo caja **/
 }
 
 *, *:before, *:after {
-    box-sizing: inherit; /* Box Model */
+    box-sizing: inherit;
 }
 
 body {
     font-size: 16px;
     font-family: var(--montse);
-    /**background-image: linear-gradient(to bottom, var(--darkgray) 0%, var(--mediumdarkgray) 100%); **/
+    /**background-image: linear-gradient(to bottom, var(--darkgray) 0%, var(--mediumdarkgray) 100%); <- degradado**/
     background-color: var(--darkgray);
     color: var(--chinesesilver);
 }
@@ -81,8 +81,9 @@ section h2.title {
     background-image: url(../img/py8T3X.jpg);
     background-position: center;
     background-size: cover;
-    height: 35rem;
+    height: 450px;
     position: relative;
+
     margin-bottom: 2rem;
 }
 
@@ -92,19 +93,19 @@ section h2.title {
 
 .section-title-container {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color:rgba(0,0,0,0.75);
     width: 100%;
     height: 100%;
 
     display: flex;
     flex-direction: column;
-    align-items: center; /* horizontal */
-    justify-content: center; /* vertical */
+    align-items: center; /* centrado horizontal si flex-dir = column*/
+    justify-content: center; /* centrado vertical si flex-dir = column*/
 }
+
 
 .my-location {
     display: flex;
-    align-items: flex-start;
 }
 
 .btn {
@@ -117,7 +118,7 @@ section h2.title {
     border-radius: 1.5rem;
     padding: 1rem 1.5rem;
     margin-top: 4rem;
-    width: 80%;
+    width: 80%;   
 }
 
 .btn:hover {
@@ -132,31 +133,41 @@ section h2.title {
     background-color: var(--mediumdarkgray);
     border-radius: .5rem;
     padding: 2rem;
-    max-width: 80%;
-}
-
-.skills {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    text-align: center;
+    max-width: 90%;
 }
 
 .skill-section {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.coding {
-    padding-left: 50%;
+.skill-section p {
+    line-height: 2.5;
+    text-align: center;
 }
 
-.databases {
-    grid-area: 1 / 3;
-    padding-right: 50%;
+.icons-container {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--darkpastelgreen);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.learner {
-    grid-area: 2 / 2;
+.coding h3 {
+    color: var(--pastel-blue);
+}
+
+.databases h3 {
+    color: var(--pastel-yellow);
+}
+
+.learner h3 {
+    color: var(--raspberryglaze);
 }
 
 .footer-text {
