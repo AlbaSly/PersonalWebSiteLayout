@@ -15,7 +15,7 @@
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
 
-    <link rel="preload" href="css/responsive.css">
+    <link rel="preload" href="css/responsive.css" as="style">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
@@ -28,7 +28,7 @@
             <a href="">Home</a>
             <a href="">Portfolio</a>
             <a href="">Clients</a>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
@@ -101,31 +101,46 @@
                 </p>
             </section>
         </div>
+    
+        <section class="contact-section">
+            <h2 id="contact" class="h2-title">Contact</h2>
+    
+            <form class="form-section">
+                <fieldset>
+                    <legend>Fill your information</legend>
+                
+                    <div class="fields-container">
+                        <div class="field">
+                            <label for="">Name</label>
+                            <input class="field-input-text" type="text" placeholder="Your name" required>
+                        </div>
+    
+                        <div class="field">
+                            <label for="">Phone</label>
+                            <input class="field-input-text" type="tel" placeholder="Your phone number">
+                        </div>
+
+                        <div class="field">
+                            <label for="">Email</label>
+                            <input class="field-input-text" type="email" placeholder="Your@Email.com">
+                        </div>
+                
+                        <div class="field">
+                            <label for="">Message</label>
+                            <textarea class="field-input-text" name="" id=""" placeholder="Tell me :)"></textarea>
+                        </div>
+                    </div>
+                
+                    <div class="flex align-to-right">
+                        <input type="submit" value="Submit" class="btn w-100">
+                    </div>
+                </fieldset>
+            </form>
+        </section>    
     </main>
 
-    <section>
-        <h2 id="contact" class="h2-title contact">Contact</h2>
-
-        <form action="">
-            <fieldset>
-                <legend>Fill your information</legend>
-            
-                <label for="">Name</label>
-                <input type="text" placeholder="Your name">
-
-                <label for="">Email</label>
-                <input type="email" placeholder="Your@Email.com">
-            
-                <label for="">Message</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Tell me :)"></textarea>
-            
-                <input type="button" value="Submit">
-            </fieldset>
-        </form>
-    </section>
-
-    <footer>
-        <p class="footer-text">Raxel Arias, 2021</p>
+    <footer class="footer-text">
+        <p>Raxel Arias, 2021</p>
     </footer>
 </body>
 </html>

@@ -19,6 +19,8 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box; /** Sin que el contenido se vea afectado por el modelo caja **/
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -47,9 +49,8 @@ h1.title {
     font-weight: 700;
 }
 
-section h2.title {
+.section-h2 {
     font-size: 4rem;
-    margin: 0 auto;
 }
 
 .main-nav-bg {
@@ -69,6 +70,7 @@ section h2.title {
 .main-nav > a {
     padding: 1.5rem;
     text-decoration: none;
+    font-size: 2rem;
     text-align: center;
     color: white;
 }
@@ -85,10 +87,6 @@ section h2.title {
     position: relative;
 
     margin-bottom: 2rem;
-}
-
-.section-h2 {
-    font-size: 4rem;
 }
 
 .section-title-container {
@@ -116,13 +114,27 @@ section h2.title {
     text-align: center;
     background-color: var(--brillianrose);
     border-radius: 1.5rem;
+    border: none;
     padding: 1rem 1.5rem;
     margin-top: 4rem;
     width: 80%;   
 }
 
+.w-100 {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-to-right {
+    justify-content: flex-end;
+}
+
 .btn:hover {
     background-color: var(--raspberryglaze);
+    cursor: pointer;
 }
 
 .shadow {
@@ -131,9 +143,14 @@ section h2.title {
     box-shadow: -4px 9px 7px 1px rgba(0,0,0,0.75); /* Standar 95% */
 
     background-color: var(--mediumdarkgray);
-    border-radius: .5rem;
+    border-radius: 1rem;
     padding: 2rem;
     max-width: 90%;
+}
+
+.main-nav, .coding, .learner, .databases, .contact-section, footer {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 .skill-section {
@@ -151,8 +168,9 @@ section h2.title {
 .icons-container {
     height: 15rem;
     width: 15rem;
-    background-color: var(--darkpastelgreen);
+    background-color: rgba(0,0,0,0.1);
     border-radius: 50%;
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -167,8 +185,51 @@ section h2.title {
 }
 
 .learner h3 {
-    color: var(--raspberryglaze);
+    color: var(--brillianrose);
 }
+
+.form-section {
+    background-color: rgba(0,0,0,0.2);
+    width: min(60rem, 100%); /** Valor más pequeño **/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.form-section legend {
+    margin: 1rem auto;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--brillianrose);
+}
+
+.form-section fieldset{
+   border: none;
+}
+
+.field {
+    margin-bottom: 1rem;
+}
+
+.field label {
+    color: white;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.field-input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.field textarea {
+    resize: vertical;
+}
+
 
 .footer-text {
     text-align: center;
